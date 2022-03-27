@@ -59,19 +59,21 @@ main {
 .textCenter {
 	text-align: center;
 	font-size: 2rem;
+	cursor:pointer;
 
 }
 
-.nav-productos {
-	display: flex;
-	justify-content: center;
+.textCenter:hover {
+	color: #E02927;
 
 }
+
+
 
 .divi {
 	height: 100px;
 	width: 100px;
-	margin: 20px;
+	margin: auto;
 }
 
 .tamanoFoto {
@@ -102,4 +104,20 @@ section {
 	display: flex;
 	justify-content: space-around;
 	margin: 24px;
+}
+
+/* flex responsive
+.nav-productos {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+} */
+
+.nav-productos {
+	display: grid;
+	gap: 1rem;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+
+
 }
