@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 
-* {
+/* * {
 	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	padding: 0;
-}
+} */
 
 
-html {
+/* html {
 
 	font-size: 62.5%;
 
-}
+} */
 
-.bg-color {
+/* .bg-color {
 	background-color: #E02927;
-}
+} */
 
 
 
@@ -25,7 +25,7 @@ h1, h2, h3 {
 	margin: 1rem;
 }
 
-nav ul {
+/* nav ul {
 	list-style: none;
 	display: inline-block;
 
@@ -44,9 +44,9 @@ nav ul li a {
 	text-decoration: none;
 	color: black;
 
-}
+} */
 
-main {
+/* main {
 	padding: 2rem;
 	margin: 10px auto;
 }
@@ -76,13 +76,13 @@ main {
 	margin: auto;
 }
 
-.tamanoFoto {
+/* .tamanoFoto {
 	height: auto;
 	width: 200px;
 
-}
+} */
 
-.imgFooter {
+/* .imgFooter {
 	height: 50px;
 	width: 50px;
 
@@ -93,18 +93,14 @@ section {
 	margin: 2rem;
 	padding: 2rem 2rem;
 	font-size: 2rem;
-}
+} */
 
 
 
 
 /* Donde comprar - Centrar */
 
-.centrar {
-	display: flex;
-	justify-content: space-around;
-	margin: 24px;
-}
+
 
 /* flex responsive
 .nav-productos {
@@ -113,11 +109,10 @@ section {
 	flex-wrap: wrap;
 } */
 
-.nav-productos {
-	display: grid;
-	gap: 1rem;
-	grid-auto-flow: dense;
-	grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
 
 
-}
+/* .imgFooter {
+    height: 50px;
+    width: 50px;
+
+} */

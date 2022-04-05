@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+nav {
+  background-color: #E02927; }
+  nav ul {
+    list-style: none;
+    display: inline-block; }
+    nav ul li {
+      font-size: 1em;
+      display: inline-block;
+      margin-top: -1rem;
+      margin-right: 2rem;
+      vertical-align: middle; }
+      nav ul li a {
+        text-decoration: none;
+        color: black; }
+        nav ul li a:hover {
+          color: black; }
+
+main {
+  padding: 2rem;
+  margin: 10px auto;
+  background-color: gray; }
+  main .textCenter {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer; }
+    main .textCenter:hover {
+      color: #F6921E; }
+  main .nav-productos {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr)); }
+    main .nav-productos .divi {
+      height: 100px;
+      width: 100px;
+      margin: auto; }
+
+section {
+  height: auto;
+  margin: 2rem;
+  padding: 2rem 2rem;
+  font-size: 1em; }
+  section h3 {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer; }
+    section h3:hover {
+      color: #F6921E; }
+
+.centrar {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px; }
+
+.imgProductos {
+  width: 140px;
+  margin: 10px;
+  pading: 10px; }
+
+footer {
+  background-color: #E02927; }
+  footer .imgFooter {
+    height: 50px;
+    width: 50px; }
