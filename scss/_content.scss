@@ -1,0 +1,95 @@
+main {
+    padding: 2rem;
+    margin: 10px auto;
+    background-color: $ColorFondo;
+
+    .textCenter {
+        text-align: center;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $SegundoColor;
+        }
+
+    }
+
+    .nav-productos {
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+
+        .divi {
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+
+
+    }
+
+}
+
+
+section {
+    height: auto;
+    margin: 2rem;
+    padding: 2rem 2rem;
+    font-size: $textSM;
+
+    h3 {
+
+        text-align: center;
+        font-size: 2rem;
+        cursor: pointer;
+
+        &:hover {
+            color: map-get($map: $paleta, $key: 'dos' );
+        }
+
+
+
+    }
+}
+
+.centrar {
+    display: flex;
+    justify-content: space-around;
+    margin: 24px;
+}
+
+.imgProductos {
+    width: 140px;
+    margin: 10px;
+    pading: 10px;
+
+}
+
+.btn-primary {
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    border: none;
+
+
+}
+
+.border-rounded {
+    @extend .btn-primary;
+    border-radius: 15px;
+
+}
+
+@mixin texto($font-size, $line-height, $color) {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    padding: 4px 20px;
+
+}
+
+section p {
+    @include texto(20px, 1.4em, black)
+}
+
