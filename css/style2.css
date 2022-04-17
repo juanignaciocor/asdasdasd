@@ -23,7 +23,6 @@ nav {
 
 main {
   padding: 2rem;
-  margin: 10px auto;
   background-color: gray; }
   main .textCenter {
     text-align: center;
@@ -77,6 +76,29 @@ section p {
   line-height: 1.4em;
   color: black;
   padding: 4px 20px; }
+
+.contentCard {
+  display: flex;
+  flex-direction: row; }
+  .contentCard .card {
+    margin: 0 12px;
+    background-color: gray;
+    text-align: center; }
+    .contentCard .card .card-img-top {
+      border-top-left-radius: calc(0.25rem - 1px);
+      border-top-right-radius: calc(0.25rem - 1px);
+      margin: 10px 10px;
+      width: auto;
+      -webkit-transition: .8s ease; }
+    .contentCard .card .btn-primary, .contentCard .card .border-rounded {
+      color: #fff;
+      background-color: #E02927;
+      border-color: #000000;
+      width: 100%;
+      height: auto; }
+      .contentCard .card .btn-primary:hover, .contentCard .card .border-rounded:hover {
+        background-color: #F6921E;
+        cursor: pointer; }
 
 footer {
   background-color: #E02927; }

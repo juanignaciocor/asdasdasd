@@ -1,6 +1,5 @@
 main {
     padding: 2rem;
-    margin: 10px auto;
     background-color: $ColorFondo;
 
     .textCenter {
@@ -45,7 +44,7 @@ section {
         cursor: pointer;
 
         &:hover {
-            color: map-get($map: $paleta, $key: 'dos' );
+            color: map-get($map: $paleta, $key: 'dos');
         }
 
 
@@ -93,3 +92,42 @@ section p {
     @include texto(20px, 1.4em, black)
 }
 
+.contentCard {
+
+    display: flex;
+    flex-direction: row;
+
+    .card {
+        margin: 0 12px;
+        background-color: $ColorFondo;
+        text-align: center;
+
+        .card-img-top {
+
+            border-top-left-radius: calc(0.25rem - 1px);
+            border-top-right-radius: calc(0.25rem - 1px);
+            margin: 10px 10px;
+            width: auto;
+            -webkit-transition: .8s ease;
+
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: $PrimerColor;
+            border-color: #000000;
+            width: 100%;
+            height: auto;
+
+            &:hover {
+                background-color: $SegundoColor;
+                cursor: pointer;
+
+
+            }
+        }
+
+    }
+
+
+}
