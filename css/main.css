@@ -1,0 +1,94 @@
+main {
+  padding: 2rem;
+  background-color: gray; }
+  main .textCenter {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer; }
+    main .textCenter:hover {
+      color: #f6921e; }
+  main .nav-productos {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr)); }
+    main .nav-productos .divi {
+      height: 100px;
+      width: 100px;
+      margin: auto; }
+
+section {
+  height: auto;
+  margin: 2rem;
+  padding: 2rem 2rem;
+  font-size: 24px; }
+  section h3 {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer; }
+    section h3:hover {
+      color: #f6921e; }
+
+.imgFooter {
+  height: 50px;
+  width: 50px; }
+
+.centrar {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px; }
+
+.imgProductos {
+  width: 140px;
+  margin: 10px;
+  pading: 10px; }
+
+.btn-primary, .border-rounded {
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  border: none; }
+
+.border-rounded {
+  border-radius: 15px; }
+
+section p {
+  font-size: 20px;
+  line-height: 1.4em;
+  color: black;
+  padding: 4px 20px; }
+
+.contentCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .contentCard__card {
+    margin: 8px;
+    background-color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px; }
+    .contentCard__card img {
+      margin-top: 1rem;
+      width: 80%; }
+    .contentCard__card .card-body {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+    .contentCard__card .btn-primary, .contentCard__card .border-rounded {
+      color: #fff;
+      background-color: #e02927;
+      border-color: #000000;
+      width: 100%;
+      height: auto; }
+      .contentCard__card .btn-primary:hover, .contentCard__card .border-rounded:hover {
+        background-color: #f6921e;
+        cursor: pointer; }

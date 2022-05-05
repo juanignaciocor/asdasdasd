@@ -1,133 +1,126 @@
 main {
-    padding: 2rem;
-    background-color: $ColorFondo;
+  padding: 2rem;
+  background-color: $ColorFondo;
 
-    .textCenter {
-        text-align: center;
-        font-size: 2rem;
-        cursor: pointer;
+  .textCenter {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
 
-        &:hover {
-            color: $SegundoColor;
-        }
-
+    &:hover {
+      color: $SegundoColor;
     }
+  }
 
-    .nav-productos {
-        display: grid;
-        gap: 1rem;
-        grid-auto-flow: dense;
-        grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+  .nav-productos {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
 
-        .divi {
-            height: 100px;
-            width: 100px;
-            margin: auto;
-        }
-
-
+    .divi {
+      height: 100px;
+      width: 100px;
+      margin: auto;
     }
-
+  }
 }
-
 
 section {
-    height: auto;
-    margin: 2rem;
-    padding: 2rem 2rem;
-    font-size: $textSM;
+  height: auto;
+  margin: 2rem;
+  padding: 2rem 2rem;
+  font-size: $textSM;
 
-    h3 {
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    cursor: pointer;
 
-        text-align: center;
-        font-size: 2rem;
-        cursor: pointer;
-
-        &:hover {
-            color: map-get($map: $paleta, $key: 'dos');
-        }
-
-
-
+    &:hover {
+      color: map-get($map: $paleta, $key: "dos");
     }
+  }
 }
-
+.imgFooter {
+  height: 50px;
+  width: 50px;
+}
 .centrar {
-    display: flex;
-    justify-content: space-around;
-    margin: 24px;
+  display: flex;
+  justify-content: space-around;
+  margin: 24px;
 }
 
 .imgProductos {
-    width: 140px;
-    margin: 10px;
-    pading: 10px;
-
+  width: 140px;
+  margin: 10px;
+  pading: 10px;
 }
 
 .btn-primary {
-    width: 100px;
-    height: 30px;
-    background-color: orange;
-    border: none;
-
-
+  width: 100px;
+  height: 30px;
+  background-color: orange;
+  border: none;
 }
 
 .border-rounded {
-    @extend .btn-primary;
-    border-radius: 15px;
-
+  @extend .btn-primary;
+  border-radius: 15px;
 }
 
 @mixin texto($font-size, $line-height, $color) {
-    font-size: $font-size;
-    line-height: $line-height;
-    color: $color;
-    padding: 4px 20px;
-
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  padding: 4px 20px;
 }
 
 section p {
-    @include texto(20px, 1.4em, black)
+  @include texto(20px, 1.4em, black);
 }
 
 .contentCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
+  &__card {
+    margin: 8px;
+    background-color: gray;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
 
-    .card {
-        margin: 0 12px;
-        background-color: $ColorFondo;
-        text-align: center;
-
-        .card-img-top {
-
-            border-top-left-radius: calc(0.25rem - 1px);
-            border-top-right-radius: calc(0.25rem - 1px);
-            margin: 10px 10px;
-            width: auto;
-            -webkit-transition: .8s ease;
-
-        }
-
-        .btn-primary {
-            color: #fff;
-            background-color: $PrimerColor;
-            border-color: #000000;
-            width: 100%;
-            height: auto;
-
-            &:hover {
-                background-color: $SegundoColor;
-                cursor: pointer;
-
-
-            }
-        }
-
+    img {
+      margin-top: 1rem;
+      width: 80%;
     }
+    .card-body {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .btn-primary {
+      color: #fff;
+      background-color: $PrimerColor;
+      border-color: #000000;
+      width: 100%;
+      height: auto;
 
-
+      &:hover {
+        background-color: $SegundoColor;
+        cursor: pointer;
+      }
+    }
+  }
 }
